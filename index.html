@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Hotline</title>
+
+    <!-- daisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .hind-madurai {
+        font-family: "Hind Madurai", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="">
+      <!-- nav goes here  -->
+      <nav class=" my-5 container mx-auto flex justify-between items-center">
+        <!-- logo + title -->
+        <div class="flex gap-2 justify-center items-center">
+          <figure>
+            <img src="./assets/logo.png" alt="" class="w-[50px] h-[50px]" />
+          </figure>
+          <h1 class="text-[#006747] font-bold">
+            Emergency <br />
+            Service
+          </h1>
+        </div>
+
+        <!-- desktop menu -->
+        <div class="hidden md:flex gap-2">
+          <div
+            class="bg-[#41ff6b1a] rounded-3xl p-3 flex justify-center items-center gap-1 w-20"
+          >
+            <h1 class="font-bold">0</h1>
+            <img class="w-5 h-5" src="./assets/heart.png" alt="" />
+          </div>
+          <div
+            class="bg-[#41ff6b1a] rounded-3xl p-3 flex justify-center items-center gap-1 w-20"
+          >
+            <h1 class="font-bold">100</h1>
+            <img class="w-5 h-5" src="./assets/coin.png" alt="" />
+          </div>
+          <div
+            class="bg-[#00a63e] rounded-3xl p-3 flex justify-center items-center gap-1 w-24"
+          >
+            <h1 class="text-white font-bold"><span>2</span> Copy</h1>
+          </div>
+        </div>
+
+        <!-- mobile hamburger -->
+        <div class="dropdown md:hidden">
+          <button tabindex="0" class="btn btn-ghost">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </button>
+          <ul
+            tabindex="0"
+            class="menu dropdown-content bg-base-100 rounded-box z-[1] w-40 p-2 shadow mt-3 right-0"
+          >
+            <li>
+              <a class="flex justify-between">
+                0
+                <img class="w-5 h-5" src="./assets/heart.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a class="flex justify-between">
+                100
+                <img class="w-5 h-5" src="./assets/coin.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a class="flex justify-between bg-[#00a63e] text-white font-bold">
+                <span>2 Copy</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- hero section  -->
+      <div
+        class="flex flex-col justify-center items-center py-8 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] px-4"
+      >
+        <figure>
+          <img class="w-24 h-24" src="./assets/logo-dark.png" alt="" />
+        </figure>
+        <h1 class="text-white text-center font-bold text-3xl md:text-5xl hind-madurai">
+          Emergency Service Directory
+        </h1>
+        <p class="my-4 text-white font-semibold md:text-xl text-center hind-madurai">
+          Government Emergency Services at Your Fingertip - A Project by
+          Government of the People's Republic of Bangladesh
+        </p>
+      </div>
+    </header>
+
+    <!-- main content  -->
+
+    <section  class="bg-[#F5FFF6]">
+        <div class="container mx-auto">
+
+        </div>
+    </section>
+  </body>
+</html>

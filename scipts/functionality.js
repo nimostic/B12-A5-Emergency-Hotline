@@ -11,19 +11,24 @@ document.addEventListener("click", function (event) {
   
   const heart = event.target.closest(".fa-heart");
   if (!heart) return;
-  if (heart.classList.contains("fa-regular")) {
-    heart.classList.replace("fa-regular", "fa-solid");
-    heart.classList.add("fa-solid", "text-red-500");
-    count++;
-  } else {
-    heart.classList.replace("fa-solid", "fa-regular");
-    heart.classList.remove("text-red-500", "fa-solid");
-    count--;
-  }
+  
+  heart.classList.replace("fa-regular", "fa-solid");
+  heart.classList.add("fa-solid", "text-red-500");
+  count++;
+  
+  // if (heart.classList.contains("fa-regular")) {
+  //   heart.classList.replace("fa-regular", "fa-solid");
+  //   heart.classList.add("fa-solid", "text-red-500");
+  //   count++;
+  // } else {
+  //   heart.classList.replace("fa-solid", "fa-regular");
+  //   heart.classList.remove("text-red-500", "fa-solid");
+  //   count--;
+  // }
   heartCount.innerText = count;
   mobileheartCount.innerText = count;
 
-  
+
 });
 
 // call button
@@ -43,6 +48,7 @@ document.addEventListener("click", function (e) {
   //store korsi
   callHistory.push({ title, number, date });
 
+  // <i class="fa-solid fa-phone text-[#00a63e]"></i> call icon 
   console.log(title);
   if (btn) {
     if (totalCoin > 0) {
@@ -55,9 +61,10 @@ document.addEventListener("click", function (e) {
         <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg my-2">
             <div>
               <p class="font-semibold">${title}</p>
-              <p class="text-sm text-gray-500">${number}   ${date}</p>
+              <p class="text-sm font-semibold">${number}</p>
             </div>
-            <i class="fa-solid fa-phone text-[#00a63e]"></i>
+            
+            <p class="text-sm font-semibold">${date}</p>
         </div>
       `;
       document.getElementById("history-list").prepend(div);
